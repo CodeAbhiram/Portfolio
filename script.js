@@ -49,7 +49,7 @@ const but1=document.getElementById("pbutton1");
 const but2=document.getElementById("pbutton2");
 but1.addEventListener("click",()=>{
     window.open("https://github.com/CodeAbhiram/Air-Quality-Checker", "_blank");
-
+    console.log("hello");
 })
 but2.addEventListener("click",()=>{
     window.open("https://github.com/CodeAbhiram/dietplanner.github.io", "_blank");
