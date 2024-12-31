@@ -108,14 +108,6 @@ i{
     filter:grayscale(100%) opacity(0.7);
     
 }
-.nav-link:hover{
-    filter:grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color:var(--text-secondary);
-    transition:filter 500ms ease-in;
-    transition: 500ms ease-in
-  
-}
 
 .navlink i{
     scale:1;
@@ -278,10 +270,12 @@ font-family: tiny5;
 }
 .cards i{
    color:#6649b8; 
+   margin-bottom: 5px;
 }
 .cards p{
     font-family: poppins,arial;
     cursor:pointer;
+    margin-top:10px;
 }
 .experience{
     margin-left: 5rem;
@@ -475,10 +469,19 @@ transition: scale 0.5s ease-in-out;
     margin:0;
    
 }
-.nav-link:hover i{
+.nav-link:active i{
     scale: 1.5;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
+.nav-link:active{
+    filter:grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color:var(--text-secondary);
+    transition:filter 500ms ease-in;
+    transition: 200ms ease-in
+  
+}
+
 
 .about{
     margin-left: 0;
@@ -589,6 +592,15 @@ background-color: #23232e;
         scale: 1.5;
         transition: 0.5s ease-in-out;
     }
+    .nav-link:hover{
+        filter:grayscale(0%) opacity(1);
+        background: var(--bg-secondary);
+        color:var(--text-secondary);
+        transition:filter 500ms ease-in;
+        transition: 500ms ease-in
+      
+    }
+    
     .Mlogo{
         display:none;
     }
@@ -630,7 +642,9 @@ background-color: #23232e;
     h1,h2{
         font-size: larger;
     }
-
+    .nav-link i{
+        margin-left: 1rem;
+    }
     .imgprofile img{
         height:300px;
         width:300px;
@@ -657,10 +671,10 @@ background-color: #23232e;
     }
     .image{
         height:300px;
-        width:380px;
+        width:350px;
     }
     .contact-info-container p{
-        font-size:0.65rem;
+        font-size:1rem;
     }
     .contact-info-upper-container{
         flex-wrap: wrap;
